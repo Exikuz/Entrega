@@ -13,7 +13,7 @@ def nuevo(self):
     nuevo1.save()
     nuevo2.save()
     nuevo3.save()
-    Valor = "Familiares agregados"
+    Valor = f"Familiares agregados:  integrante #1: {nuevo1.Nombre} edad:{nuevo1.edad}, Integrante #2:{nuevo2.Nombre} edad:{nuevo2.edad}, Integrante #3: :{nuevo3.Nombre} edad:{nuevo3.edad} "
     return HttpResponse(Valor)
 
 def vista(href):
